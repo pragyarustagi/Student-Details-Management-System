@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10fb3040-2267-457c-a175-b4d5dbc3b5c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pragyaassignment2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Consonants/Consonants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Enums/Enums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Exceptions/Exceptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Courses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/StudentFileStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/MenuHandler/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Validations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Consonants/Consonants.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Enums/Enums.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Exceptions/Exceptions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Action.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Courses.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/StudentFileStream.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/MenuHandler/Menu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Validations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -371,7 +338,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537803762514" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537818831152" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
