@@ -58,6 +58,10 @@ public class Action {
         Validations valid = new Validations();
 
         valid.isValidName(student.getName());
+        valid.isValidAddress(student.getAddress());
+        valid.isValidAge(student.getAge());
+        valid.isValidRollno(student.getRollNo());
+
 
         list.add(new Student(student.getName(), student.getRollNo(), student.getAge(), student.getAddress()));
         Collections.sort(list);
