@@ -1,6 +1,6 @@
 package com.pragya.assignment2.Constants;
 
-public class Consonants {
+public class Constants {
 
     public static final String YES = "yes";
     public static final String NO = "no";

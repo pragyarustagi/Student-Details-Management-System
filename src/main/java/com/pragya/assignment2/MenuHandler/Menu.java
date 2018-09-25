@@ -54,7 +54,7 @@ public class Menu {
                     break;
                 }
                 case '4': {
-                    Action.getInstance().saveDetails();
+                    Action.getInstance().saveDetails(list);
                     break;
                 }
                 case '5': {
@@ -64,6 +64,7 @@ public class Menu {
 
                 default:
                     System.out.println("Inappropriate Option Chosen");
+                    break;
             }
 
 

@@ -2,25 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10fb3040-2267-457c-a175-b4d5dbc3b5c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Consonants/Consonants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Constants/Consonants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Constants/Consonants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Enums/Enums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/enums/Enums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Exceptions/Exceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/exceptions/Exceptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Action.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Store" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Store" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/StudentFileStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/FileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/MenuHandler/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/MenuHandler/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Consonants/Consonants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Consonants/Consonants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Consonants/Consonants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Enums/Enums.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Enums/Enums.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Exceptions/Exceptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Exceptions/Exceptions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/Information/StudentFileStream.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/MenuHandler/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pragya/assignment2/MenuHandler/Menu.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,13 +50,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Store" value="1" />
-          <entry key="java" value="6609" />
+          <entry key="java" value="6888" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6609" />
+          <entry key="JAVA" value="6888" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="4" />
         </counts>
@@ -77,16 +70,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Constants/Consonants.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Constants/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -94,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/MenuHandler/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+            <state relative-caret-position="388">
+              <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#351#360#0" expanded="true" />
@@ -169,12 +162,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+            <state relative-caret-position="74">
+              <caret line="226" column="53" lean-forward="true" selection-start-line="226" selection-start-column="53" selection-end-line="226" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#132#133#0" expanded="true" />
                 <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#478#487#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -232,14 +226,15 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/List.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/MenuHandler/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Consonants/Consonants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Store" />
         <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Action.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/StudentFileStream.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/FileHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Constants/Consonants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Constants/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Store" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/MenuHandler/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Action.java" />
       </list>
     </option>
   </component>
@@ -304,7 +299,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="assignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="Enums" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pragyaassignment2" type="b2602c69:ProjectViewProjectNode" />
@@ -313,7 +308,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="assignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pragyaassignment2" type="b2602c69:ProjectViewProjectNode" />
@@ -349,7 +344,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537866074790" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537868885469" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -421,14 +416,14 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4878837" weight="0.3219178" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.3219178" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49919224" weight="0.32876712" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50080776" side_tool="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50080776" side_tool="true" weight="0.3219178" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48869145" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -443,18 +438,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Action.java</url>
-          <line>190</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -486,14 +469,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Enums/Enums.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/enums/Enums.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Exceptions/Exceptions.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/exceptions/Exceptions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
@@ -525,48 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-169">
           <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Courses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Store">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/MenuHandler/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#351#360#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,13 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Constants/Consonants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Validations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -631,14 +565,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Constants/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Store">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Courses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/MenuHandler/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="56" column="57" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#351#360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pragya/assignment2/Information/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+        <state relative-caret-position="74">
+          <caret line="226" column="53" lean-forward="true" selection-start-line="226" selection-start-column="53" selection-end-line="226" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#132#133#0" expanded="true" />
             <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#478#487#0" expanded="true" />
           </folding>
         </state>
       </provider>
