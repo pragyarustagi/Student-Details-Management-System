@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 
 
 public class Validations {
+    static int x=0;
 
     private static final Pattern GENERIC_NAME_PATTERN = Pattern
             .compile("^([a-zA-Z]+[,.]?[ ]?|[a-zA-Z]+['-]?)+$");
