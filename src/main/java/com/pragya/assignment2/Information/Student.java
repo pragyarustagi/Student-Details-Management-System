@@ -17,6 +17,10 @@ public class Student implements Serializable, Comparable<Student> {
         this.address = address;
     }
 
+    public Student(){
+
+    }
+
 
     public final String getName() {
         return name;
@@ -51,12 +55,11 @@ public class Student implements Serializable, Comparable<Student> {
     }
 
     public int compareTo(Student s) {
-        if(s.getName()!=this.getName())
-        return name.compareTo(s.name);
+        if (s.getName() != this.getName())
+            return getName().compareTo(s.getName());
 
-        else
-        {
-            return rollNo.compareTo(s.rollNo);
+        else {
+            return getRollNo().compareTo(s.getRollNo());
         }
     }
 

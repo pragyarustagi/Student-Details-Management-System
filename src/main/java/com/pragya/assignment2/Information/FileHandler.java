@@ -5,29 +5,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class StudentFileStream {
+public class FileHandler {
 
-        public void writeToFile(List<Student> list, String file) {
-            ObjectOutputStream outStream = null;
-            try {
-                outStream = new ObjectOutputStream(new FileOutputStream (file));
-                for (Student p : list) {
-                    outStream.writeObject(p);
-                }
-
-            } catch (IOException ex) {
-                System.err.println("Error opening file.");
-            } finally {
-                try {
-                    if (outStream != null)
-                        outStream.close();
-                } catch (IOException ioException) {
-                    System.err.println("Error closing file.");
-                }
+    public void writeToFile(List<Student> list, String file) {
+        ObjectOutputStream outStream = null;
+        try {
+            outStream = new ObjectOutputStream(new FileOutputStream(file));
+            for (Student p : list) {
+                outStream.writeObject(p);
             }
 
-
+        } catch (IOException ex) {
+            System.err.println("Error opening file.");
+        } finally {
+            try {
+                if (outStream != null)
+                    outStream.close();
+            } catch (IOException ioException) {
+                System.err.println("Error closing file.");
+            }
         }
+
+
+    }
 
     public List<Student> readFromFile(String file) {
         List<Student> list = new ArrayList<Student>();

@@ -3,19 +3,21 @@ package com.pragya.assignment2.MenuHandler;
 
 import com.pragya.assignment2.Information.Action;
 import com.pragya.assignment2.Information.Student;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
 public class Menu {
 
-    Menu menu=null;
-    public static Menu getInstance()
-    {
+    Menu menu = null;
+
+    public static Menu getInstance() {
         return new Menu();
     }
 
-   // List<Student> list = new ArrayList<Student>();
+    List<Student> list = new ArrayList<Student>();
 
     public void menuDriven() {
 
@@ -23,7 +25,7 @@ public class Menu {
 
         char choice;
 
-        while(true) {
+        while (true) {
 
             System.out.println("Student Information Management System ");
             System.out.println("\n1. Add Student's Details ");
@@ -38,9 +40,9 @@ public class Menu {
 
             System.out.println("\n");
 
-            switch(choice) {
+            switch (choice) {
                 case '1': {
-                    Action.getInstance().addDetails();
+                    Action.getInstance().addDetails(list);
                     break;
                 }
                 case '2': {
@@ -60,15 +62,12 @@ public class Menu {
                     break;
                 }
 
-                default: System.out.println("Inappropriate Option Chosen");
+                default:
+                    System.out.println("Inappropriate Option Chosen");
             }
 
 
         }
-
-
-
-
 
 
     }
