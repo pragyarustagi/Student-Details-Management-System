@@ -1,6 +1,8 @@
 package com.pragya.assignment2.Information;
 
 import com.pragya.assignment2.Constants.Constants;
+import com.pragya.assignment2.Validations;
+import com.pragya.assignment2.exceptions.MyExceptions;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,11 +21,11 @@ public class Action {
     List<Student> list1 = new ArrayList<Student>();
     String answer;
     String order;
-    Integer option;
+    int option;
 
     String filePath = "/Users/pragyarustagi/pragyaassignment2/src/main/java/com/pragya/assignment2/Information/Store";
 
-    public void addDetails(List<Student> list) {
+    public void addDetails(List<Student> list) throws MyExceptions {
       //  Student student = new Student();
       //  Scanner sc = new Scanner(System.in);
 
@@ -52,6 +54,10 @@ public class Action {
         //   details += s.getName() + " " + s.getRollNo() + " " + s.getAge() + " " + s.getAddress();
 
 //      String filePath = "/Users/pragyarustagi/pragyaassignment2/src/main/java/com/pragya/assignment2/Information/Store";
+
+        Validations valid = new Validations();
+
+        valid.isValidName(student.getName());
 
         list.add(new Student(student.getName(), student.getRollNo(), student.getAge(), student.getAddress()));
         Collections.sort(list);
@@ -187,7 +193,7 @@ public class Action {
         }
     }
 
-    public void deleteDetails() {
+    public void deleteDetails() throws MyExceptions {
 
         System.out.println("Enter the Roll Number whose Information has to be deleted: ");
         Scanner scan = new Scanner(System.in);
@@ -206,6 +212,9 @@ public class Action {
 
         if (t != -1) {
             list1.remove(t);
+        }
+        else {
+            throw new MyExceptions("Roll number entered by the user doesn't exists!");
         }
 
         System.out.println("Do you want to save the Changes?");

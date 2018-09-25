@@ -3,6 +3,7 @@ package com.pragya.assignment2.MenuHandler;
 
 import com.pragya.assignment2.Information.Action;
 import com.pragya.assignment2.Information.Student;
+import com.pragya.assignment2.exceptions.MyExceptions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +20,7 @@ public class Menu {
 
     List<Student> list = new ArrayList<Student>();
 
-    public void menuDriven() {
+    public void menuDriven() throws MyExceptions {
 
         Scanner scan = new Scanner(System.in);
 
