@@ -1,6 +1,5 @@
 package com.pragya.assignment2.MenuHandler;
 
-
 import com.pragya.assignment2.Information.Action;
 import com.pragya.assignment2.Information.Student;
 import com.pragya.assignment2.exceptions.MyExceptions;
@@ -8,6 +7,7 @@ import com.pragya.assignment2.exceptions.MyExceptions;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.*;
 
 
 public class Menu {
@@ -19,15 +19,18 @@ public class Menu {
     }
 
     List<Student> list = new ArrayList<Student>();
+    Set<Integer> set = new HashSet<Integer>();
 
+    /**
+     * Menu Driven Program
+     * @throws MyExceptions
+     */
     public void menuDriven() throws MyExceptions {
 
         Scanner scan = new Scanner(System.in);
-
         char choice;
 
         while (true) {
-
             System.out.println("Student Information Management System ");
             System.out.println("\n1. Add Student's Details ");
             System.out.println("2. Display Student's Details");
@@ -35,15 +38,14 @@ public class Menu {
             System.out.println("4. Save Details");
             System.out.println("5. Terminate");
 
+            //User Input his/her Choice
             System.out.println("Choose any one Option: ");
             choice = scan.next().charAt(0);
 
-
-            System.out.println("\n");
-
+            //Using Action class Object(Singleton class) to call methods
             switch (choice) {
                 case '1': {
-                    Action.getInstance().addDetails(list);
+                    Action.getInstance().addDetails(list,set);
                     break;
                 }
                 case '2': {
@@ -63,14 +65,11 @@ public class Menu {
                     break;
                 }
 
-                default:
-                    System.out.println("Inappropriate Option Chosen");
-                    break;
+                default: {
+                    throw new MyExceptions("Inappropriate Option Choosen!");
+                }
             }
-
-
         }
-
 
     }
 }

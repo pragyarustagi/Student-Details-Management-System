@@ -1,7 +1,9 @@
 package com.pragya.assignment2.Information;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public class Student implements Serializable, Comparable<Student> {
 
@@ -9,17 +11,40 @@ public class Student implements Serializable, Comparable<Student> {
     private Integer age;
     private String address;
     private Integer rollNo;
+    private List<Courses> courses;
 
-    public Student(String name, Integer rollNo, Integer age, String address) {
+    /**
+     * Parameterized Constructor
+     * @param name
+     * @param rollNo
+     * @param age
+     * @param address
+     */
+
+    private List<Courses> coursesList = new ArrayList<Courses>();
+    public Student(String name, Integer rollNo, Integer age, String address, List<Courses> coursesList) {
         this.name = name;
         this.rollNo = rollNo;
         this.age = age;
         this.address = address;
+        this.coursesList = coursesList;
     }
 
-    public Student(){
-
+    //Default Constructor
+    public Student() {
     }
+
+    public final void addCourse(List<Courses> coursesList) {
+        if(this.coursesList.isEmpty()){
+            this.coursesList = coursesList;
+        }
+    }
+
+
+    public final List getList() {
+        return coursesList;
+    }
+
 
 
     public final String getName() {
@@ -54,6 +79,10 @@ public class Student implements Serializable, Comparable<Student> {
         this.rollNo = rollNo;
     }
 
+
+
+
+    //Using Comparable interface to Sort according to Name
     public int compareTo(Student s) {
         if (s.getName() != this.getName())
             return getName().compareTo(s.getName());
@@ -63,8 +92,8 @@ public class Student implements Serializable, Comparable<Student> {
         }
     }
 
+    //Using Comparator interface to sort according to Roll Number in Ascending Order
     public static Comparator<Student> RollnoComparator = new Comparator<Student>() {
-
         public int compare(Student o1, Student o2) {
             int rollno1 = o1.getRollNo();
             int rollno2 = o2.getRollNo();
@@ -72,6 +101,7 @@ public class Student implements Serializable, Comparable<Student> {
         }
     };
 
+    //Using Comparator interface to sort according to Age in Ascending Order
     public static Comparator<Student> AgeComparator = new Comparator<Student>() {
         public int compare(Student o1, Student o2) {
             int age1 = o1.getAge();
@@ -80,6 +110,7 @@ public class Student implements Serializable, Comparable<Student> {
         }
     };
 
+    //Using Comparator interface to sort according to Address in Ascending Order
     public static Comparator<Student> AddressComparator = new Comparator<Student>() {
         public int compare(Student o1, Student o2) {
             String address1 = o1.getAddress().toUpperCase();
@@ -88,8 +119,7 @@ public class Student implements Serializable, Comparable<Student> {
         }
     };
 
-    //................
-
+    //Using Comparator interface to sort according to Rollno in Descending Order
     public static Comparator<Student> DesRollnoComparator = new Comparator<Student>() {
         public int compare(Student o1, Student o2) {
             int rollno1 = o1.getRollNo();
@@ -98,6 +128,7 @@ public class Student implements Serializable, Comparable<Student> {
         }
     };
 
+    //Using Comparator interface to sort according to Age in Descending Order
     public static Comparator<Student> DesAgeComparator = new Comparator<Student>() {
         public int compare(Student o1, Student o2) {
             int age1 = o1.getAge();
@@ -106,6 +137,7 @@ public class Student implements Serializable, Comparable<Student> {
         }
     };
 
+    //Using Comparator interface to sort according to Address in Descending Order
     public static Comparator<Student> DesAddressComparator = new Comparator<Student>() {
         public int compare(Student o1, Student o2) {
             String address1 = o1.getAddress().toUpperCase();

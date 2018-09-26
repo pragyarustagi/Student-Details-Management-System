@@ -2,34 +2,21 @@ package com.pragya.assignment2.Information;
 
 public class Courses {
 
-    private String courseName;
-    private Integer courseID;
-    private Double courseFees;
+    private Character courseName;
 
-    public final String getCourseName() {
-        return courseName;
+    public Courses() {
     }
 
-    public final void setCourseName(String courseName) {
+    public Courses(Character courseName) {
         this.courseName = courseName;
     }
 
-    public final Integer getCourseID() {
-        return courseID;
+    public final Character getCourseName() {
+        return courseName;
     }
 
-    public final void setCourseID(Integer age) {
-        this.courseID = courseID;
+    public final void setCourseName(Character courseName) {
+        this.courseName = courseName;
     }
-
-
-    public final Double getCourseFees() {
-        return courseFees;
-    }
-
-    public final void setCourseFees() {
-        this.courseFees = courseFees;
-    }
-
 
 }

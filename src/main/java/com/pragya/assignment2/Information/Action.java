@@ -4,10 +4,7 @@ import com.pragya.assignment2.Constants.Constants;
 import com.pragya.assignment2.Validations;
 import com.pragya.assignment2.exceptions.MyExceptions;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Action {
 
@@ -15,45 +12,43 @@ public class Action {
         return new Action();
     }
 
-    //  List<Student> list = new ArrayList<Student>();
     Student student = new Student();
     Scanner sc = new Scanner(System.in);
     List<Student> list1 = new ArrayList<Student>();
-    String answer;
-    String order;
-    int option;
+    List<Character> character = new ArrayList<Character>();
+
+
+    String answer, order;
+    Integer option;
 
     String filePath = "/Users/pragyarustagi/pragyaassignment2/src/main/java/com/pragya/assignment2/Information/Store";
 
-    public void addDetails(List<Student> list) throws MyExceptions {
-      //  Student student = new Student();
-      //  Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter Student's Details: ");
+    public void addDetails(List<Student> list, Set<Integer> set) throws MyExceptions {
+        System.out.println("\nEnter Student's Details: ");
         System.out.println("\nName: ");
         student.setName(sc.nextLine());
-   //     name = sc.nextLine();
 
         System.out.println("Address: ");
         student.setAddress(sc.nextLine());
-   //     address = sc.nextLine();
+
+        System.out.println("Choose any 4 Courses (A,B,C,D,E,F): ");
+        String coursechoosen = sc.nextLine();
+
+        List<Courses> coursesList = new ArrayList<Courses>();
+        for (char ch : coursechoosen.toCharArray()) {
+            if (ch != ' ') {
+                Courses courses = new Courses();
+                courses.setCourseName(ch);
+                coursesList.add(courses);
+            }
+        }
+
 
         System.out.println("Age: ");
         student.setAge(sc.nextInt());
-    //    age = sc.nextInt();
 
         System.out.println("Roll No: ");
         student.setRollNo(sc.nextInt());
-    //    rollNo = sc.nextInt();
-
-
-        //    System.out.println("Courses: ");
-        //....
-
-        //   String details = null;
-        //   details += s.getName() + " " + s.getRollNo() + " " + s.getAge() + " " + s.getAddress();
-
-//      String filePath = "/Users/pragyarustagi/pragyaassignment2/src/main/java/com/pragya/assignment2/Information/Store";
 
         Validations valid = new Validations();
 
@@ -61,25 +56,26 @@ public class Action {
         valid.isValidAddress(student.getAddress());
         valid.isValidAge(student.getAge());
         valid.isValidRollno(student.getRollNo());
+        valid.isUniqueRollNo(student.getRollNo(), set);
 
 
-        list.add(new Student(student.getName(), student.getRollNo(), student.getAge(), student.getAddress()));
+        list.add(student);
         Collections.sort(list);
 
-        // FileHandler sf = new FileHandler();
 
-       /* sf.writeToFile(list, filePath);
-        List<Student> list1 = sf.readFromFile(filePath);
-        for (Student st : list1) {
+        for (Student st : list) {
             System.out.printf("%-10s%-7d%-7d%-20s\n",
                     st.getName(), st.getRollNo(), st.getAge(),
                     st.getAddress());
 
-        } */
+            }
+
+
+
     }
 
 
-    public void displayDetails() {
+    public void displayDetails() throws MyExceptions {
 
         System.out.println("\nChoose the Order");
         System.out.println("\n1. Ascending Order");
@@ -96,7 +92,6 @@ public class Action {
         option = sc.nextInt();
 
         if (order.equals(Constants.ONE)) {
-
             FileHandler sf = new FileHandler();
             List<Student> list1 = sf.readFromFile(filePath);
             switch (option) {
@@ -106,7 +101,6 @@ public class Action {
                         System.out.printf("%-10s%-7d%-7d%-20s\n",
                                 st.getName(), st.getRollNo(), st.getAge(),
                                 st.getAddress());
-
                     }
                     break;
                 }
@@ -116,7 +110,6 @@ public class Action {
                         System.out.printf("%-10s%-7d%-7d%-20s\n",
                                 st.getName(), st.getRollNo(), st.getAge(),
                                 st.getAddress());
-
                     }
                     break;
                 }
@@ -126,7 +119,6 @@ public class Action {
                         System.out.printf("%-10s%-7d%-7d%-20s\n",
                                 st.getName(), st.getRollNo(), st.getAge(),
                                 st.getAddress());
-
                     }
                     break;
                 }
@@ -136,7 +128,6 @@ public class Action {
                         System.out.printf("%-10s%-7d%-7d%-20s\n",
                                 st.getName(), st.getRollNo(), st.getAge(),
                                 st.getAddress());
-
                     }
                     break;
                 }
@@ -155,7 +146,6 @@ public class Action {
                         System.out.printf("%-10s%-7d%-7d%-20s\n",
                                 st.getName(), st.getRollNo(), st.getAge(),
                                 st.getAddress());
-
                     }
                     break;
                 }
@@ -165,7 +155,6 @@ public class Action {
                         System.out.printf("%-10s%-7d%-7d%-20s\n",
                                 st.getName(), st.getRollNo(), st.getAge(),
                                 st.getAddress());
-
                     }
                     break;
                 }
@@ -175,7 +164,6 @@ public class Action {
                         System.out.printf("%-10s%-7d%-7d%-20s\n",
                                 st.getName(), st.getRollNo(), st.getAge(),
                                 st.getAddress());
-
                     }
                     break;
                 }
@@ -185,15 +173,13 @@ public class Action {
                         System.out.printf("%-10s%-7d%-7d%-20s\n",
                                 st.getName(), st.getRollNo(), st.getAge(),
                                 st.getAddress());
-
                     }
                     break;
                 }
-                default:
-                    System.out.println("\nInvalid Option Choosen");
-                    break;
+                default: {
+                    throw new MyExceptions("\nInvalid Option Choosen");
+                }
             }
-
         }
     }
 
@@ -204,59 +190,32 @@ public class Action {
         Integer rollNumber = scan.nextInt();
         FileHandler sf = new FileHandler();
         List<Student> list1 = sf.readFromFile(filePath);
-     //   Integer RnoPresent = 0;
         int t = -1;
-        //  List<Student> found = new ArrayList<Student>();
         for (int pos = 0; pos < list1.size(); pos++) {
             if (rollNumber.equals(list1.get(pos).getRollNo())) {
                 t = pos;
-                //       found.add(st);
             }
         }
 
         if (t != -1) {
             list1.remove(t);
-        }
-        else {
-            throw new MyExceptions("Roll number entered by the user doesn't exists!");
+        } else {
+            throw new MyExceptions("\nRoll number entered by the user doesn't exists!");
         }
 
         System.out.println("Do you want to save the Changes?");
         answer = sc.nextLine();
-        if((Constants.YES).equalsIgnoreCase(answer)) {
+        if ((Constants.YES).equalsIgnoreCase(answer)) {
             Action.getInstance().saveDetails(list1);
         }
-
-
-    /*    if (RnoPresent == 0) {
-            System.out.println("Rollno entered by the user doesn't exists!");
-        } else {
-            list1.removeAll(found);
-        } */
-
-      //  sf.writeToFile(list1, filePath);
-     /*   List<Student> li = sf.readFromFile(filePath);
-        for (Student st : li) {
-            System.out.printf("%-10s%-7d%-7d%-20s\n",
-                    st.getName(), st.getRollNo(), st.getAge(),
-                    st.getAddress());
-        } */
     }
-
 
     public void saveDetails(List<Student> list) {
         FileHandler sf = new FileHandler();
         sf.writeToFile(list, filePath);
-        /*  List<Student> li = sf.readFromFile(filePath);
-            for (Student st : li) {
-                System.out.printf("%-10s%-7d%-7d%-20s\n",
-                        st.getName(), st.getRollNo(), st.getAge(),
-                        st.getAddress());
-            } */
     }
 
     public void terminate() {
-
         System.out.println("Do you want to save the changes?");
         answer = sc.nextLine();
         if ((Constants.YES).equalsIgnoreCase(answer)) {
