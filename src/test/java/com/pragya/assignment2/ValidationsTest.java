@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ValidationsTest {
+public class  ValidationsTest {
 
     @Test(expected = MyExceptions.class)
     public void testValidName1() throws MyExceptions {
